@@ -1,0 +1,61 @@
+{
+  "id": "505b8162-f45c-4e96-aff3-041152817be5",
+  "version": "2.0",
+  "name": "tets2",
+  "url": "http://automationpractice.com/index.php",
+  "tests": [{
+    "id": "dbeaecd8-b8d0-4d38-8781-c9d8e1fa51f9",
+    "name": "Untitled",
+    "commands": [{
+      "id": "ba13c197-e31e-4c5f-9704-054cc1e7447a",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3d5b7a6-a0cd-42ba-bdda-8c3186855d20",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50f569e2-d217-431c-bcc6-fd2f6da6c981",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8730ed61-d136-4750-bad6-5f6313603c96",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "39437a12-5870-4b41-bdf8-b75744250e3c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dbeaecd8-b8d0-4d38-8781-c9d8e1fa51f9"]
+  }],
+  "urls": [],
+  "plugins": []
+}
